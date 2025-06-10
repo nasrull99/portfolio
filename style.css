@@ -1,0 +1,72 @@
+/* css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafbfc;
+    color: #222;
+}
+nav {
+    background: #222;
+    padding: 0.5rem 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+nav ul li a:hover {
+    color: #007acc;
+}
+header {
+    text-align: center;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+.project {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.project:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+}
+footer a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+footer a:hover {
+    color: #007acc;
+}
+@media (max-width: 600px) {
+    header { padding: 1rem; }
+    nav ul { flex-direction: column; }
+    nav ul li { margin: 0.5rem 0; }
+}
