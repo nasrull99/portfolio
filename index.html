@@ -10,11 +10,9 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Nasrullah</a>
-        <div class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navbar">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <a href="#" class="logo"></a>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa fa-bars"></i>
         </div>
         <nav id="navbar">
             <a href="index.html" class="active"> Home</a>
@@ -24,7 +22,6 @@
             <a href="project.html">Project</a>
             <a href="contact.html">Contact</a>
         </nav>
-        <div class="nav-overlay" id="nav-overlay"></div>
     </header>
     <section class="home">
         <div class="home-img">
@@ -49,45 +46,6 @@
             <a href="resume.pdf" class="btn" download>Download Resume</a>
         </div>
     </section>
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navbar = document.getElementById('navbar');
-        const navOverlay = document.getElementById('nav-overlay');
-        function openMenu() {
-            navbar.classList.add('active');
-            navOverlay.classList.add('active');
-            menuToggle.classList.add('open');
-            menuToggle.setAttribute('aria-expanded', 'true');
-        }
-        function closeMenu() {
-            navbar.classList.remove('active');
-            navOverlay.classList.remove('active');
-            menuToggle.classList.remove('open');
-            menuToggle.setAttribute('aria-expanded', 'false');
-        }
-        menuToggle.addEventListener('click', () => {
-            if(navbar.classList.contains('active')) {
-                closeMenu();
-            } else {
-                openMenu();
-            }
-        });
-        navOverlay.addEventListener('click', closeMenu);
-        window.addEventListener('resize', () => {
-            if(window.innerWidth > 995) {
-                navbar.classList.add('active');
-                navOverlay.classList.remove('active');
-                menuToggle.classList.remove('open');
-            } else {
-                navbar.classList.remove('active');
-            }
-        });
-        // Initialize nav state
-        if(window.innerWidth > 995) {
-            navbar.classList.add('active');
-        } else {
-            navbar.classList.remove('active');
-        }
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
