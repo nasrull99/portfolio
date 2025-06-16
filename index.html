@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad Nasrullah | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
     <header>
-        <h1>Mohammad Nasrullah</h1>
-        <p>Software Developer</p>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate software developer with experience in web and mobile applications. I love building efficient and scalable solutions.</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>A personal website to showcase my work and skills.</p>
-            <a href="https://github.com/nasrull99/portfolio" target="_blank">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Task Manager App</h3>
-            <p>A simple and intuitive task management application.</p>
-            <a href="https://github.com/nasrull99/task-manager" target="_blank">View Project</a>
-        </div>
-    </section>
-    <footer id="contact">
-        <a href="https://github.com/nasrull99" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/mohammad-nasrullah-manap-17ba1b351/" target="_blank">LinkedIn</a>
-    </footer>
-    <script src="script.js"></script>
-</body>
+        <a href="#" class="logo"></a>
 
-</html> 
+        <nav>
+            <a href="index.html" class="active"> Home</a>
+            <a href="service.html">Services</a>
+            <a href="skill.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="image/putih.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Nasrullah</span></h1>
+            <h3 class="typing-text"> <span></span></h3>
+            <p>I am a highly motivated Software Engineering student with a strong interest in web development, software
+                testing, and data science. Seeking an internship opportunity to apply my skills in Laravel, PHP, and
+                MySQL, while gaining practical experience in real-world software development projects. I am passionate
+                about writing clean and efficient code, analyzing data for insights, designing and executing test cases,
+                and solving problems in collaborative team environments. Eager to contribute to impactful projects while
+                continuously learning and growing as a developer and tester.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mohammad-nasrullah-manap-17ba1b351/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/nasrull99"><i class="fa-brands fa-github"></i></a>
+                <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+            </div>
+            <a href="resume.pdf" class="btn" download>Download Resume</a>
+        </div>
+    </section>
+</body>
+</html>

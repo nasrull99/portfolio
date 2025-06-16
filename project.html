@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Experience | Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="skill.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="project.html" class="active">Project</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="experience" id="experience">
+            <h2 class="section-title">Project</h2>
+            <div class="experience-list">
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>AMD Synergy Workshop Management System</h3>
+                        <span class="exp-label">Final Year Project</span>
+                    </div>
+                    <ul>
+                        <li>Developed a web-based system using Laravel, PHP, JavaScript, CSS and MySQL for managing customer details. </li>
+                        <li>Implemented CRUD operations and dynamic data handling.</li>
+                        <li>Developed a comprehensive web-based management system for a real-world welding workshop (AMD Synergy).</li>
+                        <li>Implemented customer management, allowing admin to create, view, update, and delete customer records.</li>
+                        <li>Designed dynamic quotation and invoice builder modules with material selection, price calculation, and summary generation.</li>
+                        <li>Integrated admin and customer roles with secure access controls; customers can log in to view personalized quotations and invoices.</li>
+                        <li>Enabled real-time total calculation and dynamic table rows using JavaScript for seamless UX.</li>
+                        <li>Designed an admin dashboard with KPIs and Chart.js visualizations to track sales and customer data.</li>
+                        <li>Focused on practical usability and streamlined workshop workflow through digitalization.</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>Gender Distribution in Professional Fields</h3>
+                        <span class="exp-label">Data Science Project – Python & Power BI</span>
+                    </div>
+                    <ul>
+                        <li>Developed data analysis pipeline and interactive dashboards.</li>
+                        <li>Utilized <b>Python (Pandas, NumPy)</b> and <b>Power BI</b> for data wrangling and visualization.</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>Habit-Based Obesity Classification</h3>
+                        <span class="exp-label">Data Mining Research Project – R</span>
+                    </div>
+                    <ul>
+                        <li>Designed ML pipeline for classifying obesity using various models.</li>
+                        <li>Applied feature engineering and model evaluation techniques.</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>Software Tester for UTHM Students Event Management System</h3>
+                        <span class="exp-label">Software Tester Project</span>
+                    </div>
+                    <ul>
+                        <li>Developed SRS and SDS documents, created and executed test cases.</li>
+                        <li>Performed manual and automated testing using <b>Selenium WebDriver</b>.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <style>
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2.2rem;
+            margin-top: 2.5rem;
+            align-items: center;
+        }
+        .experience-card {
+            background: #181818;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(183,75,75,0.10);
+            padding: 2.2rem 2.5rem;
+            color: #fff;
+            border: 1.5px solid #232323;
+            width: 100%;
+            max-width: 600px;
+            transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+        }
+        .experience-card:hover {
+            box-shadow: 0 8px 32px rgba(183,75,75,0.18);
+            border-color: #b74b4b;
+            transform: scale(1.03);
+        }
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.7rem;
+        }
+        .exp-header h3 {
+            color: #b74b4b;
+            font-size: 1.3rem;
+            margin: 0;
+        }
+        .exp-label {
+            background: #232323;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0.2em 0.8em;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+        .experience-card ul {
+            margin: 0.7rem 0 0 1.2rem;
+            color: #e0e0e0;
+            font-size: 1.1rem;
+            padding-left: 1.2rem;
+        }
+        @media (max-width: 700px) {
+            .experience-card {
+                padding: 1.2rem 0.7rem;
+                font-size: 1rem;
+            }
+            .exp-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.3rem;
+            }
+        }
+    </style>
+</body>
+</html>

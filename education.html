@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Education | Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="skill.html">Skills</a>
+            <a href="education.html" class="active">Education</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="education" id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-list">
+            <div class="education-item">
+                <h3>University Tun Hussein Onn Malaysia (UTHM)</h3>
+                <span>2022-2026</span>
+                <p>Major: Software Engineering<br>Current CGPA: 3.50</p>
+            </div>
+            <div class="education-item">
+                <h3>Kelantan Matriculation College</h3>
+                <span>2021-2022</span>
+                <p>Major: Computer Science<br>CGPA: 3.75</p>
+            </div>
+        </div>
+    </section>
+    <style>
+        .education-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2.2rem;
+            margin-top: 2.5rem;
+            align-items: center;
+        }
+        .education-item {
+            background: #181818;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(183,75,75,0.10);
+            padding: 2.2rem 2.5rem;
+            color: #fff;
+            border: 1.5px solid #232323;
+            width: 100%;
+            max-width: 500px;
+            transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+        }
+        .education-item:hover {
+            box-shadow: 0 8px 32px rgba(183,75,75,0.18);
+            border-color: #b74b4b;
+            transform: scale(1.03);
+        }
+        .education-item h3 {
+            color: #b74b4b;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        .education-item span {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .education-item p {
+            color: #e0e0e0;
+            font-size: 1.1rem;
+        }
+        @media (max-width: 700px) {
+            .education-item {
+                padding: 1.2rem 0.7rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</body>
+</html>

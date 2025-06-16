@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact | Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="skill.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-info">
+            <p><i class="fa-solid fa-location-dot"></i> Johor, Malaysia</p>
+            <p><i class="fa-solid fa-phone"></i> +60133443760</p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:muhdnasrullah47@gmail.com">muhdnasrullah47@gmail.com</a></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mohammad-nasrullah-manap-17ba1b351/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/nasrull99"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    <style>
+        .contact-info {
+            margin-bottom: 2.2rem;
+            color: #fff;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+            color: #fff;
+        }
+        .contact-info a {
+            color: #b74b4b;
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+        .contact-info a:hover {
+            color: #fff;
+        }
+        .social-icons {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 2rem;
+            transition: color 0.2s, transform 0.2s;
+        }
+        .social-icons a:hover {
+            color: #b74b4b;
+            transform: scale(1.15);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            max-width: 400px;
+            margin: 0 auto;
+            background: #181818;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(183,75,75,0.10);
+            border: 1.5px solid #232323;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #232323;
+            background: #232323;
+            color: #fff;
+            font-size: 1.1rem;
+            resize: none;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: 2px solid #b74b4b;
+        }
+        .contact-form .btn {
+            background: #b74b4b;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            padding: 1rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+        .contact-form .btn:hover {
+            background: #fff;
+            color: #b74b4b;
+            transform: scale(1.04);
+        }
+        @media (max-width: 700px) {
+            .contact-form {
+                padding: 1.2rem 0.7rem;
+            }
+        }
+    </style>
+</body>
+</html>
