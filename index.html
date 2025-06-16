@@ -10,9 +10,11 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo"></a>
-
-        <nav>
+        <a href="#" class="logo">Nasrullah</a>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav id="navbar">
             <a href="index.html" class="active"> Home</a>
             <a href="service.html">Services</a>
             <a href="skill.html">Skills</a>
@@ -44,5 +46,23 @@
             <a href="resume.pdf" class="btn" download>Download Resume</a>
         </div>
     </section>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+        menuToggle.addEventListener('click', () => {
+            navbar.style.display = navbar.style.display === 'flex' ? 'none' : 'flex';
+        });
+        window.addEventListener('resize', () => {
+            if(window.innerWidth > 995) {
+                navbar.style.display = 'flex';
+            } else {
+                navbar.style.display = 'none';
+            }
+        });
+        // Initialize nav state
+        if(window.innerWidth <= 995) {
+            navbar.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
