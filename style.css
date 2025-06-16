@@ -64,6 +64,15 @@ nav a.active{
     border-bottom: 3px solid #b74b4b;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 2.8rem;
+    color: #b74b4b;
+    cursor: pointer;
+    margin-left: 2rem;
+    z-index: 200;
+}
+
 @media(max-width:995px){
     nav{
         position: absolute;
@@ -94,6 +103,47 @@ nav a.active{
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #b74b4b;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        top: 70px;
+        right: 5%;
+        width: 60vw;
+        background: #161616;
+        border-left: 3px solid #b74b4b;
+        border-bottom: 3px solid #b74b4b;
+        border-bottom-left-radius: 2rem;
+        padding: 2rem 0 2rem 2rem;
+        box-shadow: 0 8px 32px rgba(183,75,75,0.18);
+        z-index: 150;
+    }
+
+    nav a {
+        margin: 1.2rem 0;
+        font-size: 2rem;
+        border: none;
+    }
+}
+
+@media (min-width: 996px) {
+    nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: transparent;
+        box-shadow: none;
+        width: auto;
+        padding: 0;
+    }
+    .menu-toggle {
+        display: none;
     }
 }
 
