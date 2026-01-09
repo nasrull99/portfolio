@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Skills | Portfolio</title>
+    <style>
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2.2rem;
+            margin-top: 2.5rem;
+            align-items: center;
+        }
+    
+        .experience-card {
+            background: #181818;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(183, 75, 75, 0.10);
+            padding: 2.2rem 2.5rem;
+            color: #fff;
+            border: 1.5px solid #232323;
+            width: 100%;
+            max-width: 600px;
+            transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+        }
+    
+        .experience-card:hover {
+            box-shadow: 0 8px 32px rgba(183, 75, 75, 0.18);
+            border-color: #b74b4b;
+            transform: scale(1.03);
+        }
+    
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.7rem;
+        }
+    
+        .exp-header h3 {
+            color: #b74b4b;
+            font-size: 1.3rem;
+            margin: 0;
+        }
+    
+        .exp-label {
+            background: #232323;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0.2em 0.8em;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+    
+        .experience-card ul {
+            margin: 0.7rem 0 0 1.2rem;
+            color: #e0e0e0;
+            font-size: 1.1rem;
+            padding-left: 1.2rem;
+        }
+    
+        @media (max-width: 700px) {
+            .experience-card {
+                padding: 1.2rem 0.7rem;
+                font-size: 1rem;
+            }
+    
+            .exp-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"></a>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav id="navbar">
+            <a href="index.html"> Home</a>
+            <a href="service.html">Services</a>
+            <a href="skill.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="project.html">Project</a>
+            <a href="experience.html" class="active">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="experience" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-list">
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>Pejabat Setiausaha Kerajaan Negeri Kelantan</h3>
+                        <span class="exp-label">Internship</span>
+                    </div>
+                    <ul>
+                        <li>Developed the S3P web-based system using Laravel, PHP, MySQL, and JavaScript to manage internal administrativeprocesses.</li>
+                        <li>Implemented modules for workflow tracking, data management, and reporting for government departmental operations.</li>
+                        <li>Created secure user roles with controlled access for staff and administrators.</li>
+                        <li>Integrated dynamic dashboards and real-time data visualizations to assist in decision-making.</li>
+                        <li>Improved operational efficiency by digitalizing manual processes within the department.</li>
+                        <li>Handled full-stack development including backend logic, database design, and frontend interface.</li>
+                        <li>Utilized tools such as Git for version control, VS Code for development, Composer for package management, and ApexChart for visualizations.</li>
+                    </ul>
+                </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
