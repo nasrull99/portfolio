@@ -11,21 +11,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-        const menuToggle = document.getElementById('menu-toggle');
-        const navbar = document.getElementById('navbar');
-        menuToggle.addEventListener('click', () => {
-            navbar.classList.toggle('active');
-        });
-        window.addEventListener('resize', () => {
-            if(window.innerWidth > 995) {
-                navbar.classList.add('active');
-            } else {
-                navbar.classList.remove('active');
-            }
-        });
-        // Initialize nav state
-        if(window.innerWidth > 995) {
-            navbar.classList.add('active');
-        } else {
-            navbar.classList.remove('active');
-        }
+const menuToggle = document.getElementById('menu-toggle');
+const navbar = document.getElementById('navbar');
+menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
+window.addEventListener('resize', () => {
+    if(window.innerWidth > 995) {
+        navbar.classList.add('active');
+    } else {
+        navbar.classList.remove('active');
+    }
+});
+// Initialize nav state
+if(window.innerWidth > 995) {
+    navbar.classList.add('active');
+} else {
+    navbar.classList.remove('active');
+}
