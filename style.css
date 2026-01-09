@@ -331,18 +331,20 @@ span{
 }
 
 @keyframes words{
-    0%, 20%{
-        content: "Software Engineer";
-    }
-    21%, 40%{
-        content: "Web Developer";
-    }
-    41%, 60%{
-        content: "Data Science";
-    }
-    61%, 80%{
-        content: "Software Tester";
-    }
+    0%,
+        25% {
+            content: "Software Engineer";
+        }
+
+        26%,
+        50% {
+            content: "Web Developer";
+        }
+
+        51%,
+        75% {
+            content: "Full Stack Developer";
+        }
 }
 
 @media (max-width: 1000px){
